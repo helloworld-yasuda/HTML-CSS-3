@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML$CSS最終課題</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="layout">
+            <div class="header">
+                <h1 class="text-myworks">My Works</h1>
+                <div class="list">
+                    <a href="#about" class="list-item">about</a>
+                    <a href="#works" class="list-item">Works</a>
+                    <a href="#news" class="list-item">News</a>
+                    <a href="#contact" class="list-item">Contact</a>
+                    <a href="instagram.com" target="_blank" class="list-item instaicon">
+                        <img src="insta-icon.png" alt="Instagramのアイコン">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="component.jpg" alt="イメージ図">
+        </div>
+        <div class="layout">
+            <div class="main">
+                <div class="section-about">
+                    <h2 class="h2" id="about">About</h2>
+                    <div class="section-list">
+                        <div class="section-item">Xxxxx Ashley</div>
+                        <div class="section-from">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</div>
+                        <div class="section-item">tel: 000-0000-0000</div>
+                        <div class="section-item">url: www.xxxxxx.jp</div>
+                        <div class="section-item">mail: xxx@xxxxxx.jp</div>
+                    </div>
+                    <div class="section-para">
+                        <div>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテ</div>
+                        <div>キストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキ</div>
+                        <div>ストテキストテキストテキストテキスト</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div>
+                        <h2 class="h2" id="works">works</h2>
+                    </div>
+                    <div class="images-1">
+                        <div class="works item1"></div>
+                        <div class="works item2"></div>
+                        <div class="works item3"></div>
+                        <div class="works item4"></div>
+                        <div class="works item5"></div>
+                        <div class="works item6"></div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="h2" id="news">News</h2>
+                    <table class="table-border">
+                        <tr class="tr">
+                            <td class="td term">2020.XX.XX</td>
+                            <td class="td detaile">デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td term">2020.XX.XX</td>
+                            <td class="td detaile">ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td term">2019.XX.XX</td>
+                            <td class="td detaile">【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td term">2019.XX.XX</td>
+                            <td class="td detaile">デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td term">2019.XX.XX</td>
+                            <td class="td detaile">【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="section">
+                    <div>
+                        <h2 class="h2" id="contact">Contact</h2>
+                    </div>
+                    <form class="section-form">
+                        <div class="input">
+                            <label for="name" class="contact">Name</label>
+                                <input type="text" id="name">
+                        </div>
+                        <div class="input">
+                            <label for="E-mail" class="contact">E-mail</label>
+                            <input type="text" id="E-mail">
+                        </div>
+                        <div class="input">
+                            <label for="messege" class="contact massege">MESSEGE</label>
+                            <textarea id="messege" class="messege-text"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">送信</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
