@@ -35,6 +35,10 @@ html {
     text-decoration:none;
 }
 
+.list-item:hover{
+    opacity: 0.7;
+}
+
 .main{
     display: flex;
     flex-direction: column;
