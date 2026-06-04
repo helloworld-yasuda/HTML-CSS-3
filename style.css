@@ -26,10 +26,10 @@ html {
 .list{
     display: flex;
     padding: 10px 0;
+    gap: 30px;
 }
 
 .list-item{
-    padding-left:30px;
     color: #24292E;
     text-decoration:none;
 }
