@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.header{
+.container{
     display: flex;
     height:270px;
     justify-content: space-between;
@@ -107,7 +107,7 @@ html {
     padding-bottom:30px;
 }
 
-.section-images{
+.works-images{
     display: flex;
     flex-direction: column;
     justify-content: center;
