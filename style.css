@@ -1,12 +1,10 @@
 .layout{
-    max-width: 1440px;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    min-width:768px;
-    box-sizing: border-box;
 }
 
 html {
@@ -21,7 +19,6 @@ html {
     padding:0 57px;
     margin: 0 auto;
     max-width: 960px;
-    width: 100%;
 }
 
 .list{
@@ -33,10 +30,16 @@ html {
 .list-item{
     color: #24292E;
     text-decoration:none;
+    font-size: 13px;
 }
 
 .list-item:hover{
     opacity: 0.7;
+}
+
+.instaicon{
+    width: 20px;
+    height:20px;
 }
 
 .main{
@@ -50,19 +53,15 @@ html {
 }
 
 .image{
+    object-fit: cover;
     margin-bottom: 80px;
-}
-
-.image-width{
-    width:100%;
-    max-width: none;
 }
 
 .section-about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:0 57px;
+    padding:0 4%;
     gap: 30px;
     margin:0 auto;
 }
@@ -96,49 +95,36 @@ html {
 .section{
     display: flex;
     flex-direction: column;
-    width: 100%;
     justify-content: center;
-    margin: 0 auto;
     gap: 65px;
-    max-width: 960px;
-    width: 100%;
+    padding: 0 4%;
 }
 
 .images-1{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between
+    justify-content:space-between;
+    width: 100%;
+    gap: 4%;
+    padding-bottom:30px;
+}
+
+.section-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  0 auto;
+    padding: 0 4%;
+}
+
+.works-text{
+    margin-bottom:65px;
 }
 
 .works{
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom:23px;
-    width: 261px;
-    height: 197px;
-}
-
-.item1{
-    background-image:url(works1.jpg);
-}
-
-.item2{
-    background-image:url(works2.jpg);
-}
-.item3{
-    background-image:url(works3.jpg);
-}
-
-.item4{
-    background-image:url(works4.jpg);
-}
-
-.item5{
-    background-image:url(works5.jpg);
-}
-
-.item6{
-    background-image:url(works6.jpg);
+    background-size:contain;
+    width: 100%;
 }
 
 .table-border{
@@ -210,4 +196,30 @@ html {
     color: #fff;
     text-align: center;
     font-size:7.1px;
+}
+
+@media (max-width:768px) and (min-width:390px) {
+    .layout{
+    }
+}
+
+@media (max-width:390px) {
+    .header{
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+    }
+
+    .main{
+        gap: 70px;
+    }
+
+    .image-width{
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .section{
+        gap: 45px;
+    }
 }
