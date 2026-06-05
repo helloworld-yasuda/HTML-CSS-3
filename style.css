@@ -57,7 +57,7 @@ html {
     margin-bottom: 80px;
 }
 
-.section-about{
+.about-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +66,7 @@ html {
     margin:0 auto;
 }
 
-.h2{
+.subtitle{
     text-align: center;
 }
 
@@ -127,15 +127,19 @@ html {
 }
 
 .news-list{
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-.section-news{
+.news-section{
     display: flex;
     align-items: center;
     gap: 4%;
     border-bottom: 1px solid #c8c8c8;
+}
+
+.top{
+    border-top: 1px solid #c8c8c8;
 }
 
 .news-dl{
@@ -156,7 +160,7 @@ html {
     justify-content: flex-start;
 }
 
-.section-form{
+.form-section{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -180,7 +184,7 @@ html {
     color: #24292E;
 }
 
-#name,#E-mail,#messege{
+#name,#E-mail,#message{
     width:100%;
     padding: 10px;
     border:1px solid#c8c8c8;
@@ -191,10 +195,11 @@ html {
 }
 
 .message{
-    height:174px;
+    width: 126px;
 }
 
 .message-text{
+    height: 10rem;
     margin-bottom: 30px;
 }
 
@@ -212,7 +217,7 @@ html {
 }
 
 @media (max-width:390px) {
-    .header{
+    .container{
         flex-direction: column;
         height: 100px;
         justify-content: center;
@@ -220,6 +225,7 @@ html {
 
     .main{
         gap: 70px;
+        padding-bottom: 70px;
     }
 
     .image-width{
@@ -228,7 +234,7 @@ html {
     }
 
     .section{
-        gap: 45px;
+        gap: 40px;
     }
     .images-1{
         flex-direction: column;
@@ -239,9 +245,10 @@ html {
         padding-bottom: 20px;
     }
 
-    .section-news{
+    .news-section{
         flex-direction: column;
         align-items: baseline;
+        padding:15px;
     }
 
     .news-dl{
@@ -252,7 +259,15 @@ html {
         padding-top: 0;
     }
 
-    .top{
-        border-top: 1px solid #c8c8c8;
+    .input{
+        flex-direction: column;
+    }
+
+    .news-dl,.news-dt{
+        padding: 0;
+    }
+
+    #name,#E-mail,#message{
+        width: 90%;
     }
 }
