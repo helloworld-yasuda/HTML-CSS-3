@@ -142,11 +142,11 @@ html {
     border-top: 1px solid #c8c8c8;
 }
 
-.news-dl{
+.news-date{
     padding: 15px;
 }
 
-.news-dt{
+.news-description{
     padding: 16px 15px 17px 15px;
     text-align: left;
 }
