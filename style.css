@@ -211,11 +211,6 @@ html {
     font-size:7.1px;
 }
 
-@media (max-width:768px) and (min-width:390px) {
-    .layout{
-    }
-}
-
 @media (max-width:390px) {
     .container{
         flex-direction: column;
